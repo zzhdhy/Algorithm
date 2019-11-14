@@ -5,22 +5,22 @@ import java.util.Random;
 public class Alg1 {
 
 	public static void main(String[] args) {
-		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
+		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
 		short m = 0, n = 0, ov = 0;
-		char symbol;//æ“ä½œç¬¦å·
+		char symbol;//²Ù×÷·ûºÅ
 		Random rand = new Random();
 		for (int i = 0; i < 50; i++) {
-			// ç”¨ç”Ÿæˆ0æˆ–1éšæœºæ•°ä»£è¡¨åŠ å‡å·
+			// ÓÃÉú³É0»ò1Ëæ»úÊı´ú±í¼Ó¼õºÅ
 			ov = (short) rand.nextInt(2);
-			// ç”Ÿæˆéšæœº100ä»¥å†…çš„æ“ä½œæ•°mï¼Œn
+			// Éú³ÉËæ»ú100ÒÔÄÚµÄ²Ù×÷Êım£¬n
 			m = (short) rand.nextInt(101);
 			n = (short) rand.nextInt(101);
-			if (ov == 1) {// åˆ¤æ–­æ“ä½œç¬¦å·
+			if (ov == 1) {// ÅĞ¶Ï²Ù×÷·ûºÅ
 				symbol = '+';
 			} else {
 				symbol = '-';
 			}
-			// è¾“å‡ºç®—å¼
+			// Êä³öËãÊ½
 			System.out.println("" + (i + 1) + ":\t" + m + symbol + n + "=");
 		}
 	}
